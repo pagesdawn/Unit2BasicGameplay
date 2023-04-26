@@ -20,10 +20,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Contains the player's movement within a certain boundary in the negative x range
         if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
         }
+
+        //Contains the player's movement within a certain boundary in the positive x range
 
         if (transform.position.x > xRange)
         {
